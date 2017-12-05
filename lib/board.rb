@@ -27,10 +27,10 @@ class Board
 
    def full?
      if @cells.any? { |c| c == " "}
-      false
-    else
-      true
-    end
+       false
+     else
+       true
+     end
    end
 
    def turn_count
