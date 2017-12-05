@@ -6,9 +6,7 @@ module Players
       #sleep(0.15)
       move = nil
 
-     if board.turn_count == 0
-       move = "5"
-     elsif !board.taken?(5)
+     if !board.taken?(5)
        move = "5"
      elsif board.taken?(5) && board.turn_count == 1
        move = "1"
