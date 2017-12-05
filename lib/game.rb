@@ -40,11 +40,11 @@ class Game
        puts "Would you like to go first or second?"
        input2 = gets.chop
        if input2 == "first"
-         new_game = @first_player
+         new_game = self.first_player
          new_game.play
          ask
        elsif input2 == "second"
-         new_game = @second_player
+         new_game = self.second_player
          new_game.play
          ask
        end
