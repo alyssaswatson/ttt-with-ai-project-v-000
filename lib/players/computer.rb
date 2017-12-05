@@ -27,7 +27,7 @@ module Players
         elsif (board.position(winning[1] + 1) == board.position(winning[2] + 1)) && board.taken?("#{winning[1] + 1}") && !board.taken?("#{winning[0] + 1}")
              move = "#{winning[0] + 1}"
          end
-    end
+       end
           move = [1, 3, 7, 9, 5, 2, 4, 6, 8].select{|i| !board.taken?(i)}.first.to_s if move == nil
       end
       move
