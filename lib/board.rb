@@ -26,7 +26,11 @@ class Board
    end
 
    def full?
-     @cells.all?{|index| index == "X" || index == "O"}
+     if @cells.any? { |c| c == " "}
+      false
+    else
+      true
+    end
    end
 
    def turn_count
