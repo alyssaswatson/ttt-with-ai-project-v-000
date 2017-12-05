@@ -95,7 +95,6 @@ class Game
    end
 
    def turn
-     puts "Please enter 1-9:"
      player = current_player
      current_move = player.move(@board)
      if !@board.valid_move?(current_move)
