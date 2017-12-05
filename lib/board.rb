@@ -46,12 +46,10 @@ class Board
    end
 
    def valid_move?(move)
-     if taken?(move)
-       puts "The position must be vacant, not currently taken by a player."
-     elsif !(move.to_i - 1).between?(0, 8)
-       puts "You must move to a position within the tic-tac-toe board."
-     else false
+     if taken?(move) == false && move.to_i <= 9 && move.to_i >= 1
        true
+     else
+       false
      end
    end
 
