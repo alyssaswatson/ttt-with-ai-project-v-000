@@ -38,11 +38,11 @@ class Board
    end
 
    def taken?(move)
-    if @cells[move.to_i - 1] == "X" || @cells[move.to_i - 1] == "O"
-      true
-    else
-      false
-    end
+     if @cells[move.to_i - 1] == "X" || @cells[move.to_i - 1] == "O"
+       true
+     else
+       false
+     end
    end
 
    def valid_move?(move)
