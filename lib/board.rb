@@ -34,13 +34,7 @@ class Board
    end
 
    def turn_count
-     counter = 0
-     @cells.each do |index|
-       if index == "X" || index == "O"
-         counter += 1
-       end
-     end
-     counter
+     @cells.select { |c| c != " "}.length
    end
 
    def taken?(move)
