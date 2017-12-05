@@ -81,7 +81,7 @@ class Game
    end
 
    def draw?
-     !won? && @board.full?
+     board.full? && !won?
    end
 
    def over?
