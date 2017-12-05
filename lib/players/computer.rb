@@ -22,7 +22,7 @@ module Players
              move = "#{win[0] + 1}"
          end
        end
-          move = [1, 3, 7, 9, 5, 2, 4, 6, 8].select{|i| !board.taken?(i)}.first.to_s if move == nil
+          move = [1..9].select{|i| !board.taken?(i)}.first.to_s if move == nil
       end
       move
     end
